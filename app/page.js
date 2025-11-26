@@ -55,7 +55,7 @@ const App = () => {
     try {
       const response = await fetch(DATA_URL, {
         headers: {
-          "x-api-key": "J7EfLAHEhHXksKbfiA1mOJALcaZR4Jqt",
+          "x-api-key": process.env.NEXT_PUBLIC_API_KEY,
         },
       });
       if (!response.ok) {
