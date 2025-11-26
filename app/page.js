@@ -46,7 +46,7 @@ const App = () => {
   const [error, setError] = useState(null);
   const [trendChartType, setTrendChartType] = useState("bar"); // 'bar', 'line', 'area'
 
-  const DATA_URL = "http://46.224.6.206:3001/logs/?currency=USD";
+  const DATA_URL = "https://api.omoplata.space/logs/?currency=USD";
 
   const fetchData = async () => {
     setLoading(true);
